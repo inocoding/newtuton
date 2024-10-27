@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning PDF Viewer</title>
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/pendahuluan.css" />
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  </head>
+  <body>
+    <!-- Container untuk animasi bangun ruang 2D -->
+    <div class="floating-background"></div>
+    <div class="pdf-viewer-layout">
+      <!-- Progress Wizard Sidebar -->
+      <aside class="sidebar left-sidebar glass-effect">
+        <h2 class="wizard-title"></h2>
+        <ul class="progress-wizard" id="progressWizard">
+          <li class="wizard-step" data-page="1">
+            <i class="bi bi-1-circle"></i>
+          </li>
+          <li class="wizard-step" data-page="2">
+            <i class="bi bi-2-circle"></i>
+          </li>
+          <li class="wizard-step" data-page="3">
+            <i class="bi bi-3-circle"></i>
+          </li>
+          <li class="wizard-step" data-page="4">
+            <i class="bi bi-4-circle"></i>
+          </li>
+          <li class="wizard-step" data-page="5">
+            <i class="bi bi-5-circle"></i>
+          </li>
+          <li class="wizard-step" data-page="6">
+            <i class="bi bi-6-circle"></i>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Bagian Tengah (Konten Utama) -->
+      <main class="pdf-viewer-container glass-effect">
+        <!-- Title -->
+        <h1 class="viewer-title">E-learning Material</h1>
+
+        <!-- PDF Page Display Area (Simulasi Konten) -->
+        <div class="pdf-pages">
+          <!-- Page 1 -->
+          <div class="pdf-page" id="page1">
+            <p>Page 1 content: Introduction to E-learning Material.</p>
+          </div>
+
+          <!-- Page 2 with PDF Viewer -->
+          <div
+            class="pdf-page"
+            id="page2"
+            data-pdf-url="https://drive.google.com/file/d/1QPFoX2XWQB-UTlpPR0fa6ZcxBmbpTrC-/view?usp=sharing"
+            style="display: none;"
+          >
+            <div id="pdf-viewer-controls">
+              <button id="prevPage" class="pdf-nav-btn">Previous Page</button>
+              <button id="nextPage" class="pdf-nav-btn">Next Page</button>
+              <button id="zoomIn" class="pdf-nav-btn">Zoom In</button>
+              <button id="zoomOut" class="pdf-nav-btn">Zoom Out</button>
+              <span id="page-info" class="page-info"
+                >Page: <span id="page-num"></span> /
+                <span id="page-count"></span
+              ></span>
+            </div>
+            <div id="pdf-viewer-container" class="pdf-viewer-container">
+              <canvas id="pdf-canvas"></canvas>
+            </div>
+          </div>
+
+          <!-- Page 3 -->
+          <div class="pdf-page" id="page3" style="display: none;">
+            <p>Page 3 content: How to Use This Platform.</p>
+            <img
+              src="https://source.unsplash.com/400x600/?books,portrait"
+              alt="Page 3 Image"
+            />
+          </div>
+
+          <!-- Page 4 with YouTube Video -->
+          <div class="pdf-page" id="page4" style="display: none;">
+            <p>Page 4 content: Key Features and Tools.</p>
+            <div class="video-container">
+              <iframe
+                id="youtube-video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/9uqi6lGHy1Q?enablejsapi=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Page 5 -->
+          <div class="pdf-page" id="page5" style="display: none;">
+            <p>Page 5 content: Best Practices for E-learning.</p>
+            <img
+              src="https://source.unsplash.com/400x600/?online,portrait"
+              alt="Page 5 Image"
+            />
+          </div>
+
+          <!-- Page 6 -->
+          <div class="pdf-page" id="page6" style="display: none;">
+            <p>Page 6 content: Final Thoughts and Summary.</p>
+            <img
+              src="https://source.unsplash.com/400x600/?graduation,portrait"
+              alt="Page 6 Image"
+            />
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+          <button
+            class="nav-btn back-btn"
+            id="previousButton"
+            onclick="previousPage()"
+            disabled
+          >
+            Previous
+          </button>
+          <button class="nav-btn next-btn" id="nextButton" onclick="nextPage()">
+            Next
+          </button>
+        </div>
+
+        <!-- Page Indicator -->
+        <p class="page-indicator" id="page-indicator">Page 1 of 6</p>
+      </main>
+
+      <!-- Bagian Kanan Kosong -->
+      <aside class="sidebar right-sidebar">
+        <!-- Kosong untuk desain layout 1:10:1 -->
+      </aside>
+    </div>
+
+    <script src="assets/js/pendahuluan.js"></script>
+  </body>
+</html>

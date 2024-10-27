@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en" class="max-width-d">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>elearning UT</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Retrina Group" />
+    <!--  FavIcon  -->
+    <link
+      rel="shortcut icon"
+      href="https://elearning.ut.ac.id/pluginfile.php/1/theme_mb2iq/favicon/1729388703/ut.ico"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+    <!-- Malihu Jquery Custom ScrollBar Css -->
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- Magnific Popup Css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--  Custom Style Css  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--  Color Css  -->
+    <link rel="stylesheet" href="assets/colors/colorfull.css" />
+
+    <style>
+      .page-login:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+
+        z-index: 1;
+      }
+
+      .page-login:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        /*background-color: rgba(38, 50, 56, 0.85);
+        /*background-color: rgba(100, 176, 242, 0.3); <--*/
+        /*background-color: rgba(100, 176, 242, 0.3);*/
+        /*background-color: rgba(27, 185, 154, 0.6);*/
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="max-width-d">
+    <!-- Preloader -->
+    <div id="line-loader">
+      <div class="middle-line"></div>
+    </div>
+
+    <!--   Menu Overlay Mobile -->
+    <div class="menu-overlay d-none"></div>
+
+    <!--   Right Side Start  -->
+    <div class="right-side d-none d-lg-block">
+      <div id="date"></div>
+      <div class="social-box">
+        <div class="follow-label">
+          <span>Contact Us</span>
+        </div>
+        <div class="social d-none d-lg-block">
+          <a href="javascript:void(0);">
+            <i class="bi bi-whatsapp t-green"></i>
+          </a>
+          <a href="javascript:void(0);">
+            <i class="bi bi-instagram t-purple"></i>
+          </a>
+          <a href="javascript:void(0);">
+            <i class="bi bi-globe t-red"></i>
+          </a>
+        </div>
+      </div>
+      <div class="next-prev-page">
+        <button type="button" class="prev-page bg-base-color hstack">
+          <i class="bi bi-chevron-compact-up mx-auto"></i>
+        </button>
+        <button type="button" class="next-page bg-base-color mt-3 hstack">
+          <i class="bi bi-chevron-compact-down mx-auto"></i>
+        </button>
+      </div>
+    </div>
+    <!--  Right Side End  -->
+
+    <!--  Left Side Start  -->
+    <div class="left-side nav-close">
+      <div class="menu-content-align">
+        <div class="left-side-image">
+          <img src="assets/img/profil2.png" alt="/" />
+        </div>
+        <h1 class="mt-1">Fikri Baerudin</h1>
+        <a
+          class="download-cv primary-button btn-sm d-none d-lg-inline-block"
+          href="javascript:void(0);"
+          >E-Learning Menu</a
+        >
+        <div class="container d-lg-none d-inline-block">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="text-muted mb-0">Mahasiswa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-align">
+        <ul class="list-group menu text-center" id="menu">
+          <li class="list-group-item">
+            <a href="#hero">
+              <i class="bi bi-grid-1x2"></i>
+              <span>Teras</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#about" class="custom-btn">
+              <i class="bi bi-person"></i>
+              <span>Progres</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#portfolio">
+              <i class="bi bi-book"></i>
+              <span>Tuton</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#resume">
+              <i class="bi bi-person-workspace"></i>
+              <span>Tutor</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#blog">
+              <i class="bi bi-nintendo-switch"></i>
+              <span>Terbaru</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#contact">
+              <i class="bi bi-geo-alt"></i>
+              <span>Kontak</span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-footer">
+          <a
+            class="download-cv primary-button mt-3 mb-4 d-lg-none"
+            href="javascript:void(0);"
+            >e-Learning Menu</a
+          >
+          <div class="social d-lg-none d-block">
+            <a href="javascript:void(0);" class="d-inline-block">
+              <i class="bi bi-whatsapp t-green"></i>
+            </a>
+            <a href="javascript:void(0);" class="d-inline-block mx-4">
+              <i class="bi bi-instagram t-purple"></i>
+            </a>
+            <a href="javascript:void(0);" class="d-inline-block">
+              <i class="bi bi-globe t-red"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Left Side End  -->
+
+    <!--  Main Start  -->
+    <main id="main" class="main-2">
+      <!--  Hero Start  -->
+      <section id="hero" class="section hero w-100">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          style="margin-top: -21px; margin-bottom: 10px; padding: 0;"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/christoph-bengtsson-lissalde-6wGLeVPJLMw-unsplash.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="border-radius: 10px;"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 25pt;">
+                  ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
+                </h5>
+                <p>
+                  Selamat Pagi Bapak
+                  <span class="fw-bold">Fikri Baerudin</span>, selamat datang di
+                  e-learning UT. <br />
+                  Tetap Semangat
+                </p>
+                <p>
+                  "Sesungguhnya Allah sangat menyukai hamba yang bekerja dan
+                  berusaha. Barangsiapa bersusah payah mencari nafkah untuk
+                  keluarganya, maka Allah akan menyelamatkannya dari api
+                  neraka."
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="assets/img/christoph-bengtsson-lissalde-6wGLeVPJLMw-unsplash.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="border-radius: 10px;"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 30pt;">
+                  يُغْفَرُ لِلشَّهِيدِ كُلُّ ذَنْبٍ إِلاَّ الدَّيْنَ
+                </h5>
+                <p>
+                  Semua dosa seorang syahid diampuni kecuali utang
+                  <br />
+                  HR. Muslim no. 1886
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="assets/img/christoph-bengtsson-lissalde-6wGLeVPJLMw-unsplash.jpg"
+                class="d-block w-100"
+                alt="..."
+                style="border-radius: 10px;"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style="font-size: 20pt;">
+                  مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا
+                  نَفَّسَ اللَّهُ عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ
+                  الْقِيَامَةِ، وَمَنْ يَسَّرَ عَلَى مُعْسِرٍ يَسَّرَ اللَّهُ
+                  عَلَيْهِ فِى الدُّنْيَا وَالآخِرَةِ
+                </h5>
+                <p>
+                  Barangsiapa yang meringankan penderitaan seorang saudara dari
+                  penderitaan-penderitaan di dunia, Allah akan meringankan
+                  penderitaannya dari penderitaan-penderitaan di Hari Kiamat.
+                  Dan barangsiapa yang memberikan kelapangan bagi orang yang
+                  sedang mengalami kesulitan, Allah akan mempermudah urusannya
+                  di Akhirat.
+                  <br />
+                  Sahih Muslim 2699a
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="hero-footer d-block d-lg-none">
+          <!-- <a
+            class="download-cv primary-button mt-3 mb-4 d-lg-none"
+            href="javascript:void(0);"
+            >Your Menu</a
+          > -->
+          <div class="social d-lg-none mb-4 d-block">
+            <a href="javascript:void(0);" class="d-inline-block">
+              <i class="bi bi-whatsapp t-green"></i>
+            </a>
+            <a href="javascript:void(0);" class="d-inline-block mx-4">
+              <i class="bi bi-instagram t-purple"></i>
+            </a>
+            <a href="javascript:void(0);" class="d-inline-block">
+              <i class="bi bi-globe t-blue"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--  Hero End  -->
+
+      <!--  About Start  -->
+      <section id="about" class="section about">
+        <div class="container">
+          <!-- Introducce Me -->
+          <div class="about-boxes">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="about-img">
+                  <img
+                    src="assets/img/profil3about.jpg"
+                    alt="/"
+                    style="max-height: 500px;"
+                  />
+                  <div class=""></div>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <h3 class="subtitle">Tuton Progress</h3>
+                <div
+                  id="count-up"
+                  class="count-up text-center box-border"
+                ></div>
+                <div class="row mt-1 skills">
+                  <div class="col-lg-12 mt-3">
+                    <div id="skills">
+                      <!-- Item 01 -->
+                      <div class="col-lg-12 skill-box">
+                        <div class="skill-text">
+                          <div class="skillbar-title">
+                            EKMA4115 - Pengantar Akuntansi
+                          </div>
+                          <div class="skill-bar-percent">
+                            <span data-from="0" data-to="25" data-speed="4000"
+                              >25</span
+                            >%
+                          </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="25%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div>
+                      <!-- Item 02 -->
+                      <div class="col-lg-12 skill-box">
+                        <div class="skill-text">
+                          <div class="skillbar-title">
+                            ADBI4201 - Bahasa Inggris Niaga
+                          </div>
+                          <div class="skill-bar-percent">
+                            <span data-from="0" data-to="45" data-speed="4000"
+                              >45</span
+                            >%
+                          </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="45%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div>
+                      <!-- Item 03 -->
+                      <div class="col-lg-12 skill-box">
+                        <div class="skill-text">
+                          <div class="skillbar-title">EKMA4116 - Manajemen</div>
+                          <div class="skill-bar-percent">
+                            <span data-from="0" data-to="45" data-speed="4000"
+                              >45</span
+                            >%
+                          </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="45%">
+                          <div class="skillbar-bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  Count up  -->
+
+          <!--  Skillbar  -->
+        </div>
+      </section>
+      <!--  About End  -->
+
+      <!--  Resume Start  -->
+      <section id="resume" class="section">
+        <div class="container">
+          <!-- Servises -->
+          <div class="services mb-6">
+            <div class="boxes">
+              <h3 class="subtitle">Services</h3>
+              <div class="row vertical-line">
+                <!-- Item 01 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Web Design</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 02 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Logo Design</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 03 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Web Development</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 04 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Short Animations</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 05 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Advetising</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 06 -->
+                <div class="col-md-6">
+                  <div class="services-box">
+                    <img src="https://via.placeholder.com/45x45" alt="/" />
+                    <div class="services-content">
+                      <h6 class="services-head">Game Development</h6>
+                      <p class="services-description mb-0">
+                        In a professional context it often happens that private
+                        or corporate clients corder a publication to be made.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  Resume  -->
+          <div class="resume">
+            <!--  TimeLine Education  -->
+            <div class="boxes my-6">
+              <h3 class="subtitle">Education</h3>
+              <div class="row vertical-line">
+                <!--  Item 01  -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2012 - 2015</p>
+                      <h6 class="timeline-title">Art University - New York</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 02  -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2015 - 2017</p>
+                      <h6 class="timeline-title">
+                        Photographer Course - Canada
+                      </h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 03  -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2017 - 2019</p>
+                      <h6 class="timeline-title">Writing Course - New York</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 04  -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2019 - 2021</p>
+                      <h6 class="timeline-title">Advetising Course - Canada</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  TimeLine Experience  -->
+            <div class="boxes mt-6 mb-3">
+              <h3 class="subtitle">Experience</h3>
+              <div class="row vertical-line">
+                <!--   Item 01   -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2017 - 2018</p>
+                      <h6 class="timeline-title">Team Leader</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--   Item 02   -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2019 - 2021</p>
+                      <h6 class="timeline-title">Business Photographer</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--   Item 03   -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2019 - 2021</p>
+                      <h6 class="timeline-title">Marketing Managment</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--   Item 04   -->
+                <div class="col-md-6">
+                  <div class="timeline-box">
+                    <div class="time-line-header">
+                      <p class="timeline-year">2021 - 2021</p>
+                      <h6 class="timeline-title">Advetising</h6>
+                    </div>
+                    <div class="timeline-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque scelerisque diam non nisi semper, et elementum
+                        lorem ornare.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Resume End  -->
+
+      <!--  Portfolio Start  -->
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <div class="heading-meta-container">
+            <h2 class="heading-title">Tuton</h2>
+            <h6 class="description">See Your Ausome Course</h6>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header border-0 pb-0">
+              <ul
+                class="nav nav-tabs d-flex justify-content-center"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active text-secondary"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#kursus"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    mata kuliah
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-secondary"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#kehadiran"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    kehadiran
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-secondary"
+                    id="materi-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#materi"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-tab"
+                    aria-selected="false"
+                  >
+                    pengayaan
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-secondary"
+                    id="diskusi-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#diskusi"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                  >
+                    diskusi
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-secondary"
+                    id="latihan-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#latihan"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                  >
+                    latihan
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-secondary"
+                    id="tugas-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tugas"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                  >
+                    tugas
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="kursus"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="portfolio-items border-line-v row">
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4204.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="#detailMataKuliah" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Ekonomi Pembangunan Islam
+                            </small>
+                          </h6>
+                          <p class="mb-0"><small>EKSA4204</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4206.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="portfolio-01.html" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Bank dan Lembaga Keuangan Syariah
+                            </small>
+                          </h6>
+                          <p class="mb-0"><small>EKSA4206</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4205.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="portfolio-01.html" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Teori Ekonomi Mikro Islam
+                            </small>
+                          </h6>
+                          <p class="mb-0 fs-6"><small>EKSA4205</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4207.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="portfolio-01.html" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Kewirausahaan Syariah
+                            </small>
+                          </h6>
+                          <p class="mb-0 fs-6"><small>EKSA4207</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4301.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="portfolio-01.html" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Sejarah Pemikiran Ekonomi Islam
+                            </small>
+                          </h6>
+                          <p class="mb-0 fs-6"><small>EKSA4301</small></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item sound">
+                      <div class="portfolio-box">
+                        <div class="portfolio-image">
+                          <img src="assets/img/EKSA4303.jpg" alt="/" />
+                          <div class="portfolio-icon">
+                            <a href="portfolio-01.html" class="ajax-page-load">
+                              <i class="bi bi-eyeglasses"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="portfolio-content">
+                          <h6 class="blog-header">
+                            <small>
+                              Bahasa Arab
+                            </small>
+                          </h6>
+                          <p class="mb-0 fs-6"><small>EKSA4303</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="kehadiran"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <table class="table table-hover table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="materi"
+                  role="tabpanel"
+                  aria-labelledby="materi-tab"
+                >
+                  3
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="diskusi"
+                  role="tabpanel"
+                  aria-labelledby="diskusi-tab"
+                >
+                  4
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="latihan"
+                  role="tabpanel"
+                  aria-labelledby="latihan-tab"
+                >
+                  5
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tugas"
+                  role="tabpanel"
+                  aria-labelledby="tugas-tab"
+                >
+                  6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Portfolio End  -->
+
+      <!--  Blog Start  -->
+      <section id="blog" class="section blog">
+        <div class="container">
+          <h3 class="subtitle">Latest News</h3>
+          <div class="boxes">
+            <div class="row vertical-line">
+              <!-- Item 01 -->
+              <div class="col-md-6">
+                <a href="blog-single.html" class="blog-box">
+                  <div class="blog-image">
+                    <img src="https://via.placeholder.com/510x340" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span>20 June 2021</span>
+                    </div>
+                    <h6 class="blog-header">
+                      Stay informed about the latest cameras and money of that
+                    </h6>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Item 02 -->
+              <div class="col-md-6">
+                <a href="blog-single.html" class="blog-box">
+                  <div class="blog-image">
+                    <img src="https://via.placeholder.com/510x340" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span>20 June 2021</span>
+                    </div>
+                    <h6 class="blog-header">
+                      What Resources help you with your photography
+                    </h6>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Item 03 -->
+              <div class="col-md-6">
+                <a href="blog-single.html" class="blog-box">
+                  <div class="blog-image">
+                    <img src="https://via.placeholder.com/510x340" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span>20 June 2021</span>
+                    </div>
+                    <h6 class="blog-header">
+                      Improve your Skills with blog posts on photography
+                    </h6>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Item 04 -->
+              <div class="col-md-6">
+                <a href="blog-single.html" class="blog-box">
+                  <div class="blog-image">
+                    <img src="https://via.placeholder.com/510x340" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span>20 June 2021</span>
+                    </div>
+                    <h6 class="blog-header">
+                      Get Inspiration from photo stories, interviews, and
+                      resource
+                    </h6>
+                    <p class="mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Blog End  -->
+
+      <!-- Contact Start -->
+      <section id="contact" class="section contact w-100">
+        <div class="container">
+          <h3 class="subtitle">Get in Touch</h3>
+          <!-- Map -->
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div
+                id="my-map"
+                data-location-lat="43.053454"
+                data-location-lng="-76.144508"
+                data-location-icon="https://via.placeholder.com/32x32"
+              ></div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <!-- Address Info -->
+            <div class="col-12 col-xl-5">
+              <div class="row">
+                <!--  Item 01 -->
+                <div class="col-lg-12">
+                  <div class="info-box">
+                    <div class="item-icon">
+                      <img src="https://via.placeholder.com/48x48" alt="/" />
+                    </div>
+                    <div class="info-text">
+                      <h5>Mail Me</h5>
+                      <small>email@example.com</small>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 02 -->
+                <div class="col-lg-12">
+                  <div class="info-box">
+                    <div class="item-icon">
+                      <img src="https://via.placeholder.com/48x48" alt="/" />
+                    </div>
+                    <div class="info-text">
+                      <h5>Call Us On</h5>
+                      <small>+123 456 7890</small>
+                    </div>
+                  </div>
+                </div>
+                <!--  Item 03 -->
+                <div class="col-lg-12">
+                  <div class="info-box">
+                    <div class="item-icon">
+                      <img src="https://via.placeholder.com/48x48" alt="/" />
+                    </div>
+                    <div class="info-text">
+                      <h5>Visit office</h5>
+                      <small>24 Street, New York, United State.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-12 col-xl-7">
+              <div class="contact-box">
+                <div class="contact-form">
+                  <form id="contactForm">
+                    <div class="row">
+                      <div class="col-lg-12 form-item">
+                        <div class="form-group">
+                          <input
+                            name="name"
+                            id="name"
+                            type="text"
+                            class="form-control"
+                            placeholder="Complate Name*"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 form-item">
+                        <div class="form-group">
+                          <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            class="form-control"
+                            placeholder="Email Address*"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 form-item">
+                        <div class="form-group">
+                          <input
+                            name="subject"
+                            id="subject"
+                            type="tel"
+                            class="form-control"
+                            placeholder="Phone number*"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 form-item">
+                        <div class="form-group">
+                          <textarea
+                            name="comments"
+                            id="comments"
+                            rows="3"
+                            class="form-control textarea"
+                            placeholder="Your message..."
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 text-left">
+                        <div class="pill-btn mt-4 mb-3">
+                          <button type="submit" class="secondary-button">
+                            Send Message
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Contact End  -->
+
+      <!-- coba halaman detail mata kuliah start -->
+      <section id="detailMataKuliah" class="section blog">
+        <div class="container">
+          <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+              <a class="ajax-page-close-button" href="#portfolio">
+                <i class="bi bi-x"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="subtitle">Ekonomi Pembangunan Islam (EKSA4204)</h3>
+          <div class="">
+            <div class="row">
+              <!-- Item 01 -->
+              <div class="col-md-3">
+                <a href="pendahuluan.html" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/pendahuluan2.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>14-20 Okt 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Pendahuluan
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- Item 02 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>21-27 Okt 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 1
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- Item 03 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>28 Okt - 03 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 2
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- Item 04 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 3
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- item 05 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 4
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- item 06 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 5
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- item 07 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 6
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- item 08 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 7
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+              <!-- item 09 -->
+              <div class="col-md-3">
+                <a href="#" class="blog-box">
+                  <div class="blog-image">
+                    <img src="assets/img/sesi.jpg" alt="/" />
+                    <div class="blog-icon">
+                      <i class="bi bi-lock"></i>
+                    </div>
+                  </div>
+                  <div class="blog-post-content">
+                    <div class="blog-dates">
+                      <span style="margin-left: -5px;"
+                        ><small>04 - 10 Nop 2024</small></span
+                      >
+                      <h5 class="blog-header" style="margin-top: -5px;">
+                        Sesi 8
+                      </h5>
+                    </div>
+                    <!-- <p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut.
+                      </p> -->
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- detail mata kuliah end -->
+    </main>
+    <!--  Main End  -->
+
+    <!--  Mobile Next and Prev Button Start -->
+    <div class="next-prev-page d-block d-lg-none">
+      <button type="button" class="prev-page bg-base-color hstack">
+        <i class="bi bi-chevron-compact-left mx-auto"></i>
+      </button>
+      <button type="button" class="next-page bg-base-color mt-1 mt-lg-3 hstack">
+        <i class="bi bi-chevron-compact-right mx-auto"></i>
+      </button>
+    </div>
+    <!--  Mobile Next and Prev Button End -->
+
+    <!--  Navbar Button Mobile Start -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!--  Navbar Button Mobile End -->
+
+    <!--  Background Shapes Start  -->
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!--  Background Shapes End  -->
+
+    <!-- Mouase Magic Cursor Start -->
+    <div class="m-magic-cursor mmc-outer"></div>
+    <div class="m-magic-cursor mmc-inner"></div>
+    <!-- Mouase Magic Cursor End -->
+
+    <!--  JavaScripts  -->
+    <!--  Jquery 3.4.1  -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Bootstrap Js  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Malihu ScrollBar Js  -->
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--  CountTo Js  -->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!--  Swiper Js  -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--  Isotope Js  -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  Magnific Popup Js  -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRemITiP7JRWpZwLhVt-T2x5MeUFE2KWs"></script>
+    <!--  Arshia Js  -->
+    <script src="assets/js/arshia.js"></script>
+  </body>
+</html>
